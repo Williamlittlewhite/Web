@@ -1,0 +1,27 @@
+div {
+    color: white;
+    width: 300px;
+    height: 300px;
+}
+
+div:nth-child(odd) {
+    background-color: #0000FF;
+}
+
+div:nth-child(even) {
+    background-color: rgb(255, 0, 0, 0.7);
+}
+
+.small-div {
+    height: 200px;
+    width: 200px;
+}
+
+#big-div {
+    width: 400px;
+    height: 400px;
+}
+
+.hover-div:hover {
+    background-color: orange;
+}
