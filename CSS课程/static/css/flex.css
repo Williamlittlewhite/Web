@@ -1,0 +1,30 @@
+.div-flex {
+    width: 50%;
+    height: 500px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.div-flex-item {
+    width: 100px;
+    height: 100px;
+    flex-grow: 1;
+}
+
+.div-flex-item:nth-child(odd) {
+    background-color: lightpink;
+    /* order: 1; */
+    flex-grow: 3;
+    flex-shrink: 3;
+}
+
+.div-flex-item:nth-child(even) {
+    background-color: lightgreen;
+    /* order: 2; */
+    flex-grow: 1;
+    flex-shrink: 1;
+}
