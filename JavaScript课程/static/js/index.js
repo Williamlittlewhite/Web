@@ -1,4 +1,9 @@
 let main = function () {
+    let step = () => {
+        $('div').width($('div').width() + 1);
+        requestAnimationFrame(step);
+    }
+    // requestAnimationFrame(step);
     // let $div = $('div');
     // let $btn_hide = $('#hide-btn');
     // let $btn_show = $('#show-btn');
@@ -8,7 +13,11 @@ let main = function () {
     // $btn_show.click(function () {
     //     $div.show();
     // })
-    let $a = $('<a href="https://www.baidu.com">')
+
+    // $div.click(function () {
+    //     let $a = $('<a href="https://www.baidu.com">Baidu</a>');
+    //     $div.append($a);
+    // })
     // let div = document.querySelector('div');
     // console.log(div);
 
